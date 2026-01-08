@@ -1,0 +1,76 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0 !important;
+  background: #001529 !important;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo {
+  flex: 0 0 auto;
+}
+
+.logo a {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.logo a:hover {
+  color: #1890ff;
+}
+
+.search-bar {
+  flex: 0 1 400px;
+  margin: 0 20px;
+}
+
+.nav-menu {
+  flex: 1;
+  background: transparent !important;
+  border-bottom: none !important;
+  min-width: 300px;
+}
+
+.header-actions {
+  flex: 0 0 auto;
+}
+
+.notification-icon {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.notification-icon:hover {
+  color: #1890ff;
+}
+
+.user-avatar {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.user-avatar:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    display: none;
+  }
+  
+  .header-content {
+    padding: 0 10px;
+  }
+}

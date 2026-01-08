@@ -1,0 +1,122 @@
+.auth-page {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.auth-card {
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-title {
+  margin-bottom: 8px !important;
+}
+
+.auth-tabs .ant-tabs-nav {
+  margin-bottom: 32px;
+}
+
+.auth-form .ant-form-item {
+  margin-bottom: 20px;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot-password {
+  padding: 0;
+}
+
+.oauth-buttons {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.oauth-btn {
+  width: 120px;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.oauth-btn.github {
+  background: #333;
+  border-color: #333;
+  color: white;
+}
+
+.oauth-btn.github:hover {
+  background: #24292e;
+  border-color: #24292e;
+  transform: translateY(-2px);
+}
+
+.oauth-btn.wechat {
+  background: #07c160;
+  border-color: #07c160;
+  color: white;
+}
+
+.oauth-btn.wechat:hover {
+  background: #06ad56;
+  border-color: #06ad56;
+  transform: translateY(-2px);
+}
+
+.oauth-btn.qq {
+  background: #12b7f5;
+  border-color: #12b7f5;
+  color: white;
+}
+
+.oauth-btn.qq:hover {
+  background: #0da5e0;
+  border-color: #0da5e0;
+  transform: translateY(-2px);
+}
+
+.oauth-btn.google {
+  background: #db4437;
+  border-color: #db4437;
+  color: white;
+}
+
+.oauth-btn.google:hover {
+  background: #c23321;
+  border-color: #c23321;
+  transform: translateY(-2px);
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+@media (max-width: 576px) {
+  .oauth-btn {
+    width: 100px;
+  }
+  
+  .auth-card {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,247 @@
+.about-page {
+  background: #f0f2f5;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.about-intro-card {
+  margin-bottom: 24px;
+}
+
+.intro-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.intro-stats {
+  margin-top: 32px;
+}
+
+.intro-stats .ant-statistic {
+  text-align: center;
+}
+
+.intro-image {
+  text-align: center;
+}
+
+.intro-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.team-card,
+.timeline-card,
+.tech-stack-card,
+.contact-card {
+  margin-bottom: 24px;
+}
+
+.member-card {
+  height: 100%;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.member-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.member-header {
+  margin-bottom: 16px;
+}
+
+.member-info {
+  margin-top: 16px;
+}
+
+.member-role {
+  color: #666;
+  margin: 4px 0;
+}
+
+.member-bio {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.member-skills {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.member-social {
+  text-align: center;
+}
+
+.timeline-container {
+  position: relative;
+  padding-left: 40px;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #1890ff;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.timeline-year {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  background: #1890ff;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  min-width: 60px;
+  text-align: center;
+}
+
+.timeline-content {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  margin-left: 20px;
+}
+
+.timeline-event {
+  color: #333;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.timeline-event:last-child {
+  border-bottom: none;
+}
+
+.tech-card {
+  height: 100%;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.tech-card:hover {
+  transform: translateY(-4px);
+}
+
+.tech-icon {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.tech-icon.frontend {
+  background: #1890ff;
+}
+
+.tech-icon.backend {
+  background: #52c41a;
+}
+
+.tech-icon.devops {
+  background: #722ed1;
+}
+
+.tech-icon.tools {
+  background: #fa8c16;
+}
+
+.tech-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.tech-card li {
+  padding: 4px 0;
+  color: #666;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tech-card li:last-child {
+  border-bottom: none;
+}
+
+.contact-list .ant-list-item {
+  border: none;
+  padding: 12px 0;
+}
+
+.contact-icon {
+  color: #1890ff;
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+.join-us {
+  text-align: center;
+  padding: 32px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  color: white;
+}
+
+.join-us .ant-statistic-title {
+  color: white;
+  font-size: 18px;
+}
+
+.join-us .ant-statistic-content {
+  color: white;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .intro-stats {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .intro-stats .ant-statistic {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  
+  .timeline-container {
+    padding-left: 0;
+  }
+  
+  .timeline-container::before {
+    display: none;
+  }
+  
+  .timeline-year {
+    position: static;
+    margin-bottom: 12px;
+  }
+  
+  .timeline-content {
+    margin-left: 0;
+  }
+}
